@@ -18,7 +18,7 @@ type UserPostProps = {
   bookmarks: number;
 };
 
-export default function UserPost(props: UserPostProps) {
+export default function UserPost(props: UserPostProps): React.JSX.Element {
   const { id, image, profileImage, firstName, lastName, location, likes, comments, bookmarks } = props;
 
   return (

@@ -7,7 +7,7 @@ import { userPosts } from '../../assets/constans/user-posts';
 import UserPost from './UserPost';
 import UserStoryList from '../UserStory/UserStoryList';
 
-export default function UserPostList() {
+export default function UserPostList(): React.JSX.Element {
   const [userPostsFetchedCounter, setUserPostsFetchedCounter] = useState<number>(1);
   const [userPostsRenderedData, setUserPostsRenderedData] = useState<Post[]>([]);
   const [isLoadingUserPosts, setIsLoadingUserPosts] = useState<boolean>(false);

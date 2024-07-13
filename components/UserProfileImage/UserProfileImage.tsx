@@ -7,7 +7,7 @@ type UserProfileImageProps = {
   imageDimensions: number;
 };
 
-export default function UserProfileImage(props: UserProfileImageProps) {
+export default function UserProfileImage(props: UserProfileImageProps): React.JSX.Element {
   const { profileImage, imageDimensions } = props;
 
   return (

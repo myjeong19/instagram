@@ -9,7 +9,7 @@ import globalStyle from '../../assets/styles/Globalstyle';
 
 import UserStory from './UserStory';
 
-export default function UserStoryList() {
+export default function UserStoryList(): React.JSX.Element {
   const [userStoriesFetchedCounter, setUserStoriesFetchedCounter] = useState<number>(1);
   const [userStoriesRenderedData, setUserStoriesRenderedData] = useState<Stories[]>([]);
   const [isLoadingUserStories, setIsLoadingUserStories] = useState<boolean>(false);

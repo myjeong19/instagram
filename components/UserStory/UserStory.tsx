@@ -10,7 +10,7 @@ export type UserStoryProps = {
   profileImage: ImageSourcePropType;
 };
 
-export default function UserStory(props: UserStoryProps) {
+export default function UserStory(props: UserStoryProps): React.JSX.Element {
   const { firstName, profileImage } = props;
 
   return (
