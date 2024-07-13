@@ -14,7 +14,7 @@ const globalStyle = StyleSheet.create({
   messageIcon: {padding: 14, backgroundColor: '#F9FAFB', borderRadius: 100},
 
   messageNumberContainer: {
-    backgroundColor: '#f35bac',
+    backgroundColor: '#F35BAC',
     justifyContent: 'center',
     alignItems: 'center',
     flexDirection: 'row',
@@ -30,6 +30,11 @@ const globalStyle = StyleSheet.create({
     color: '#fff',
     fontSize: 6,
     fontFamily: getFontFamily('Inter', '600'),
+  },
+
+  userStoryContainer: {
+    marginTop: 20,
+    marginHorizontal: 28,
   },
 });
 
