@@ -3,6 +3,7 @@ import { FontAwesomeIcon } from '@fortawesome/react-native-fontawesome';
 import { faBookmark, faEllipsisH, faHeart } from '@fortawesome/free-solid-svg-icons';
 
 import UserProfileImage from '../UserProfileImage/UserProfileImage';
+import { horizontalScale, scaleFontSize } from '../../assets/styles/scaling';
 
 import style from './style';
 
@@ -25,7 +26,7 @@ export default function UserPost(props: UserPostProps): React.JSX.Element {
     <View style={style.userPostContainer}>
       <View style={style.user}>
         <View style={style.userContainer}>
-          <UserProfileImage profileImage={profileImage as ImageSourcePropType} imageDimensions={48} />
+          <UserProfileImage profileImage={profileImage as ImageSourcePropType} imageDimensions={horizontalScale(48)} />
           <View style={style.userTextContainer}>
             <Text style={style.username}>
               {firstName} {lastName}
@@ -34,21 +35,21 @@ export default function UserPost(props: UserPostProps): React.JSX.Element {
           </View>
         </View>
 
-        <FontAwesomeIcon icon={faEllipsisH} color="#79889F" size={24}></FontAwesomeIcon>
+        <FontAwesomeIcon icon={faEllipsisH} color="#79889F" size={scaleFontSize(24)}></FontAwesomeIcon>
       </View>
       <View style={style.postImage}>
         <Image source={image} />
       </View>
       <View style={style.userActionContainer}>
-        <View style={{ ...style.actionContainer }}>
+        <View style={style.actionContainer}>
           <FontAwesomeIcon icon={faHeart} color="#79869F" />
           <Text style={style.like}>{likes}</Text>
         </View>
-        <View style={{ ...style.actionContainer, marginLeft: 27 }}>
+        <View style={style.actionRightContainer}>
           <FontAwesomeIcon icon={faBookmark} color="#79869F" />
           <Text style={style.like}>{bookmarks}</Text>
         </View>
-        <View style={{ ...style.actionContainer, marginLeft: 27 }}>
+        <View style={style.actionRightContainer}>
           <FontAwesomeIcon icon={faHeart} color="#79869F" />
           <Text style={style.like}>{comments}</Text>
         </View>
