@@ -19,7 +19,7 @@ type UserPostProps = {
 };
 
 export default function UserPost(props: UserPostProps): React.JSX.Element {
-  const { id, image, profileImage, firstName, lastName, location, likes, comments, bookmarks } = props;
+  const { image, profileImage, firstName, lastName, location, likes, comments, bookmarks } = props;
 
   return (
     <View style={style.userPostContainer}>
